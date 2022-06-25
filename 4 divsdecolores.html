@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>GameGLR</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAG0AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYCm7X/BNf6/wTX+v8E1/r/BNf6/wTX+v8AAAD/AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPkE1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8AAABCAAAAAAAAAAAAAAAAAAAAAAABAf0E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wAAAAMAAAAAAAAAAAAAAAEE1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E3v//AAAAAAAAAAAADRH8BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8AAgP+AAAAAgAAAAAAAAAABNz9/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wAAAP8AAAABAAAAAAAAAAAAAAAAAAAAAATX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/AAAA/wAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wAOEv0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABNr9/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNb5/wAAAOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAOEf0E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/A6fC/wAAAAIAAAAAAAAAAAAAAAAAAAACBNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/AAIC/gAAAAAAAAAAAAAAAAAAAPgE1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wAAACsAAAAAAAAAAAAAAAAAAAAAAAAA/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wTX+v8E1/r/BNf6/wAAAL8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjBNP1/wTX+v8E1/r/BNf6/wTX+v8E1/r/ABsg/wAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAcgAAAM8AAAArAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPgPAADgBwAAwAMAAMABAACAAwAAgA8AAIA/AACAPwAAgA8AAIAHAADAAQAAwAMAAOADAAD4DwAA/38AAA=="
+        rel="icon" type="image/x-icon" />
+</head>
+
+<div class="container-1">
+    <div class="title">
+
+        <h2>Ejercicio cambio color de fondo</h2>
+
+    </div>
+
+    <div class="laberinto">
+        <div class="laberinto-text">
+            <h4 class="indicaciones">Presiona "A" para fondo Azul</h4>
+        </div>
+        <div class="laberinto-text">
+            <h4 class="indicaciones">Presiona "S" para fondo Rojo</h4>
+        </div>
+        <div class="laberinto-text">
+            <h4 class="indicaciones">Presiona "D" para fondo Amarillo</h4>
+        </div>
+        <div class="laberinto-text">
+            <h4 class="indicaciones">Presiona cualquier otra tecla para fondo negro</h4>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container-divs" id="container-divs">
+
+
+        <div onclick="cambiarColor1()" id="color1" class="color1" ;>
+
+            <div>
+                <p class="texto-color">Cambiar color 1</p>
+            </div>
+
+
+            <div class="pacman-div">
+                <img class="pacman" src="assets/imgs/Pacman.png" alt="" srcset="">
+            </div>
+
+
+        </div>
+        <div onclick="cambiarColor2()" id="color2" class="color2" ;>
+            <div>
+                <p class="texto-color">Cambiar color 2</p>
+            </div>
+
+
+            <div class="pacman-div">
+                <img class="pacman" src="assets/imgs/Pacman.png" alt="" srcset="">
+            </div>
+
+        </div>
+        <div onclick="cambiarColor3()" id="color3" class="color3" ;>
+            <div>
+                <p class="texto-color">Cambiar color 3</p>
+            </div>
+
+
+            <div class="pacman-div">
+                <img class="pacman" src="assets/imgs/Pacman.png" alt="" srcset="">
+            </div>
+
+        </div>
+
+        <div onclick="cambiarColor4()" id="color4" class="color4">
+            <div>
+                <p class="texto-color">Cambiar color 4</p>
+            </div>
+
+
+            <div class="pacman-div">
+                <img class="pacman" src="assets/imgs/Pacman.png" alt="" srcset="">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <body>
+
+        <br>
+        <div>
+
+            <button class="button-limpiar" onclick="limpiarColor()">Limpiar
+                    colores de las cajas</button>
+
+        </div>
+
+        <div class="container-ghosts">
+
+
+            <div class="ghost-div">
+                <img class="ghost" id="ghost1" src="assets/imgs/blue-ghost.png" alt="" srcset="">
+            </div>
+
+            <div class="container-reset">
+
+                <button class="button-reset" id="button-reset" onclick="resetGame()">Reset</button>
+
+            </div>
+
+
+            <div class="ghost-div">
+                <img class="ghost" id="ghost2" src="assets/imgs/orange-ghost.png" alt="" srcset="">
+            </div>
+
+        </div>
+
+
+        <script src="assets/js/4 divscolores.js"></script>
+
+    </body>
+
+</html>
