@@ -347,10 +347,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -360,6 +360,9 @@ body {
     height: 60%;
     width: 90%;
     text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     line-height: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -373,8 +376,10 @@ body {
   }
   .laberinto .laberinto-text .indicaciones {
     text-align: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 90%;
-    font-size: 70%;
+    font-size: 100%;
   }
   .container-ghosts {
     width: 100%;
